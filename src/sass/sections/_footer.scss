@@ -1,0 +1,124 @@
+.footer.section{
+   background-color: #fff;
+}
+
+.footer{
+    &__container.container{
+        background-color: tomato;
+        padding: 73px 13px 60px 28px; 
+
+    }
+
+    &__nav-list{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column; 
+        margin-left: 81px; 
+                      
+    }
+    &__nav-item{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $dark-color;
+    list-style: none;
+    margin-bottom: 20px;
+    margin-left: 81px;
+    
+    }
+    &__input-line{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #505050;
+    border: 0.854167px solid #FFE550;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    max-width: 280px;
+    height: 42px;   
+    display: flex; 
+   
+     
+    }
+    .button{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        max-width: 103px;
+        height: 42px;
+        border:  0.854167px solid #7EB101;
+        border-radius: 20px;
+        background-color: #FFFFFF;
+        color: $dark-color;
+        margin-left: 205px;
+    }
+    &__subscribe{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+                       
+        
+    }
+    &__subs-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: $dark-color;
+    margin-bottom: 12px;
+    }
+    &__text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: $dark-color;
+    margin-bottom: 60px;
+    }
+    &__policy{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-decoration-line: underline;
+    color: #7EB101;    
+    }
+    &__policy_list{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-decoration-line: underline;
+    color: #7EB101;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    }
+    // &__policy-item:not(:last-child){
+    //    margin-right: 35px;
+    // }
+        
+    
+    
+    &__foodstra{ 
+        display:flex; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: $dark-color; 
+    justify-content: center;         
+    }
+
+}
