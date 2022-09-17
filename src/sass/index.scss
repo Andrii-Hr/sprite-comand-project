@@ -1,2 +1,16 @@
-@import './common';
-@import './example';
+@import './utils/common';
+@import './utils/variables';
+@import './utils/base';
+
+@import './components/button';
+@import './components/logo';
+@import './components/form-subscribe';
+
+@import './sections/header';
+@import './sections/hero';
+@import './sections/offerings';
+@import './sections/favorites';
+@import './sections/customers-say';
+@import './sections/subscribe';
+@import './sections/footer';
+
