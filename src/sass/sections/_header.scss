@@ -89,7 +89,7 @@ border: none;
     z-index: 10;
     width: 130px;
 height: 255px;
-left: 170px;
+right: 20px;
 top: 50px;
 background: #FEFEFE;
 box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
@@ -109,6 +109,19 @@ color: #000000;
 .mobile-nav__link :focus {
 
    background: #BBF330; 
+}
+.burger-close {
+    position: absolute;
+    padding: auto auto;
+    right:0;
+    top: 50px;
+    width: 24px;
+    height: 24px;
+        top: 4px;
+    right: 4px;
+    border: none;
+    background: none;
+    
 }
 
 
