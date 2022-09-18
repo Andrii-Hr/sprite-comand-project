@@ -49,6 +49,8 @@
       gap: 28px;
     }
   }
+  &__nav-container{
+    }
   &__nav-list {
     @media screen and (max-width: $tablet) {
       display: flex;
