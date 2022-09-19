@@ -186,6 +186,7 @@
     font-size: 13px;
     line-height: 1.5;
     color: $dark-color;
+    cursor: pointer;
 
     &:hover,
     &:focus {
@@ -200,6 +201,14 @@
 .offering__box-button {
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.offering__box-button-text {
+
+    @media screen and(min-width: $desktop) {
+        display: none;
+    }
 }
 
 .offering__box-button-text::after {
@@ -210,10 +219,6 @@
     height: 13.67px;
     margin-left: 3.42px;
     background-image: url("/src/images/offering-icon-arrow.svg");
-
-    @media screen and(min-width: $desktop) {
-        display: none;
-    }
 }
 
 .offering__apple {
