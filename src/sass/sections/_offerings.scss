@@ -207,6 +207,10 @@
 }
 
 .offering__box-button-text {
+    font-size: 13.6667px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
 
     @media screen and(min-width: $desktop) {
         display: none;
@@ -216,6 +220,7 @@
 .offering__box-button-text::after {
     content: '';
     display: inline-block;
+
     fill: #000000;
     width: 13.67px;
     height: 13.67px;
