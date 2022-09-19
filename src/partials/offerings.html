@@ -1,35 +1,33 @@
 <section class="section offering__section">
   <div class="container offering__container">
     <div class="offering__apple">
-      <div class="offering__apple-fruit">
-        <picture>
-          <source
-            srcset="
-              /src/images/offering-apple-desktop.png     1x,
-              /src/images/offering-apple-desktop-@2x.png 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="
-              /src/images/offering-apple-tablet.png     1x,
-              /src/images/offering-apple-tablet-@2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              /src/images/offering-apple-mobile.png     1x,
-              /src/images/offering-apple-mobile-@2x.png 2x
-            "
-            media="(min-width: 320px)"
-          />
-          <img
-            src="/src/images/offering-apple-mobile.png"
-            alt="Зелене яблуко"
-          />
-        </picture>
-      </div>
+      <picture>
+        <source
+          srcset="
+            /src/images/desktop/offering-apple-desktop.png     1x,
+            /src/images/desktop/offering-apple-desktop-@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            /src/images/tablet/offering-apple-tablet.png     1x,
+            /src/images/tablet/offering-apple-tablet-@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            /src/images/mobile/offering-apple-mobile.png     1x,
+            /src/images/mobile/offering-apple-mobile-@2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="/src/images/mobile/offering-apple-mobile-@2x.png"
+          alt="Зелене яблуко"
+        />
+      </picture>
     </div>
     <div class="offering__detail">
       <div class="offering_box-header">
@@ -61,13 +59,11 @@
             varius enim in eros.
           </p>
         </li>
-        <li class="offering__list-item">
-          <div class="offering__box-button">
-            <button type="button" class="offering-button">Order Now</button>
-            <p class="offering__box-button-text">Read More</p>
-          </div>
-        </li>
       </ul>
+      <div class="offering__box-button">
+        <button type="button" class="offering-button">Order Now</button>
+        <p class="offering__box-button-text">Read More</p>
+      </div>
     </div>
   </div>
 </section>
