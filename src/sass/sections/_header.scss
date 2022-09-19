@@ -7,12 +7,12 @@
 }
 
 .logo {
+  display: flex;
   width: 100%;
+  height: 52px;
   @media screen and (min-width: 768px) {
     width: 66px;
   }
-  display: flex;
-  height: 52px;
   justify-content: space-between;
   align-items: center;
 }
@@ -32,14 +32,13 @@
   fill: #7eb101;
 }
 .nav__list {
+  display: flex;
   margin-left: 191px;
   @media screen and (min-width: 1280px) {
     margin-left: 817px;
   }
   align-items: center;
-  display: flex;
   gap: 28px;
-
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -47,8 +46,14 @@
 .nav__item {
   font-size: 14px;
   line-height: 1.14;
-
   color: #000000;
+  &:hover,
+  &:focus .nav__link {
+    color: $button-color;
+  }
+}
+.nav__link--current {
+  color: $button-color;
 }
 
 .button-order {
@@ -56,15 +61,14 @@
   width: 98px;
   height: 32px;
   right: 32px;
+  top: 20px;
   @media screen and (min-width: 1280px) {
     right: 16px;
   }
-  top: 20px;
   background: $button-color;
   border-radius: 30px;
   font-size: 13px;
   line-height: 1.5;
-
   text-align: center;
   color: $dark-color;
   border: none;
@@ -74,15 +78,14 @@
   }
 }
 .mobile-menu {
+  position: absolute;
   opacity: 0;
   @media screen and (min-width: 768px) {
     display: none;
   }
-  // pointer-events: none;
   &.is-open {
     opacity: 1;
   }
-  position: absolute;
   width: 130px;
   height: 255px;
   display: flex;
