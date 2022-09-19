@@ -60,14 +60,15 @@
     right: 16px;
   }
   top: 20px;
-  background: #bbf330;
+  background: $button-color;
   border-radius: 30px;
   font-size: 13px;
   line-height: 1.5;
 
   text-align: center;
-  color: #2c2c2c;
+  color: $dark-color;
   border: none;
+  cursor: pointer;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -88,7 +89,7 @@
   right: 20px;
   top: 50px;
   z-index: 10;
-  background: #fefefe;
+  background: $back-color;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   @media screen and (min-width: 768px) {
     box-shadow: none;
@@ -115,12 +116,12 @@
   color: #000000;
   &:hover,
   &:focus {
-    background-color: #bbf330;
+    background-color: $button-color;
   }
 }
 
 .mobile-nav__link :focus {
-  background: #bbf330;
+  background: $button-color;
 }
 .burger-close {
   position: absolute;
@@ -230,7 +231,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.4;
-  color: #2c2c2c;
+  color: $dark-color;
 }
 
 .form__input-line {
@@ -248,7 +249,7 @@
   width: 100%;
   font-size: 16px;
   line-height: 1.25;
-  color: #2c2c2c;
+  color: $dark-color;
   border: none;
 }
 .form__button-field {
@@ -262,7 +263,7 @@
   width: 106px;
   height: 40px;
   background: #ffffff;
-  border: 2px solid #7eb101;
+  border: 2px solid $second-color;
   border-radius: 30px;
   cursor: pointer;
 }
