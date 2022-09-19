@@ -56,17 +56,14 @@
 .offering__box-header-title {
     color: $dark-color;
     margin-bottom: 28px;
-    // font-size: 28px;
     line-height: 1.18;
 
     @media screen and(min-width: $tablet) {
         margin-bottom: 20px;
-        // font-size: 42px;
         line-height: 1.17;
     }
 
     @media screen and(min-width: $desktop) {
-        // font-size: 42px;
         line-height: 1.2;
     }
 }
@@ -82,18 +79,14 @@
 }
 
 .offering__box-header-text {
-    // font-weight: 400;
-    // font-size: 14px;
     line-height: 1.14;
     color: $dark-color;
 
     @media screen and(min-width: $tablet) {
-        // font-size: 16px;
         line-height: 1.19;
     }
 
     @media screen and(min-width: $desktop) {
-        // font-size: 16px;
         line-height: 1.5;
     }
 }
@@ -142,7 +135,6 @@
 
 .offering__list-header {
     margin-bottom: 16px;
-    // font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
 
