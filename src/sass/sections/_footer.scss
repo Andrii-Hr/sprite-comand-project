@@ -40,26 +40,43 @@
     }
   }
 
-  &__nav {
+  &__nav-container {
+    display: flex;
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-wrap: nowrap;
       flex-direction: row;
-
-      gap: 28px;
+      align-items: center;
+      margin-bottom: 40px;    
     }
   }
-  &__nav-container{
+  &__logo-icon{
+    margin-right: 81px;
+    @media screen and (min-width: $tablet) {
+     margin-left: 0;
+      margin-right: 125px;}
+        
+    @media screen and (min-width: $desktop) {
+          width: 66px;
+          height: 52px;
     }
+
+  } 
+  
   &__nav-list {
     @media screen and (max-width: $tablet) {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      margin-left: 81px;
+      // display: flex;
+      // flex-wrap: wrap;
+      // flex-direction: column;
+      
     }
     @media screen and (min-width: $tablet) {
-      margin-left: 114px;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: center  ; 
+      gap: 28px;
+
     }
   }
   &__nav-item {
@@ -69,12 +86,17 @@
     color: $dark-color;
     list-style: none;
     margin-bottom: 20px;
-  }
+    @media screen and (min-width: $tablet) {
+      
 
-  &__input-line {
-    
+    }
+
+  }
+  
+
+  &__input-line {    
     font-size: 12px;
-    line-height: 15px;
+    line-height: 1.25;
     color: #505050;
     border: 0.854167px solid #ffe550;
     border-radius: 20px;
@@ -82,6 +104,7 @@
     max-width: 280px;
     height: 42px;
     padding-left: 12px;
+    
     @media screen and (min-width: $tablet) {
       margin-right: 13px;
       margin-bottom: 0;
@@ -92,6 +115,35 @@
       margin-right: 32px;
     }
   }
+  input + span {
+    position: relative;
+  }
+  input:invalid{
+    border: 0.854167px solid #FF705D;
+  }
+  input:invalid + span::before {
+    content: "✖ Not a valid email address (example@email.com)";   
+    position: absolute;
+    width: 100%;
+    max-width: 232px;
+    height: 1px;
+    top: -18px;
+    left: 0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #FF705D;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+  }
+  input:valid{
+    border: 0.854167px solid #7EB101;
+  }
+
   .footer__button {
     font-family: 'Roboto';
     font-style: normal;
@@ -106,6 +158,7 @@
     background-color: #ffffff;
     color: $dark-color;
     padding: 11px 22px;
+    cursor: pointer;
     @media screen and (min-width: $tablet) {
       margin-bottom: 0;
     }
@@ -126,14 +179,14 @@
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 150%;
+    line-height: 1.5;
     color: $dark-color;
     margin-bottom: 12px;
   }
   &__text {
     
     font-size: 10px;
-    line-height: 12px;
+    line-height: 1.2;
     color: $dark-color;
     margin-bottom: 60px;
 
@@ -143,14 +196,14 @@
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
-      line-height: 14px;
+      line-height: 1.16;
     }
   }
 
   &__policy {
     
     font-size: 10px;
-    line-height: 12px;
+    line-height: 1.2;
     text-decoration-line: underline;
     color: #7eb101;
     @media screen and (min-width: $tablet) {
@@ -159,14 +212,14 @@
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
-      line-height: 14px;
+      line-height: 1.16;
     }
   }
 
   &__policy_list {
     
     font-size: 10px;
-    line-height: 12px;
+    line-height: 1.2;
     text-decoration-line: underline;
     color: #7eb101;
     display: flex;
@@ -182,7 +235,7 @@
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
-      line-height: 14px;
+      line-height: 1.16;
     }
   }
 
@@ -198,7 +251,7 @@
     display: flex;
     
     font-size: 10px;
-    line-height: 12px;
+    line-height: 1.2;
     color: $dark-color;
     justify-content: center;
     @media screen and (min-width: $tablet) {
@@ -206,7 +259,7 @@
       font-style: normal;
       font-weight: 400;
       font-size: 12px;
-      line-height: 14px;
+      line-height: 1.16;
     }
   }
 
