@@ -146,13 +146,10 @@
   opacity: 1;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &.is-hiden {
+  &.is-hidden {
     opacity: 0;
     pointer-events: none;
   }
-}
-.checkbox__icon .is-hidden {
-  opacity: 0;
 }
 
 .backdrop.is-hidden {
@@ -176,9 +173,7 @@
   background: #ffe550;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 30px;
-
   opacity: 1;
-
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 480px) {
     width: 458px;
@@ -238,7 +233,7 @@
   color: #2c2c2c;
 }
 
-.form__input {
+.form__input-line {
   position: relative;
   display: flex;
   height: 48px;
@@ -249,20 +244,12 @@
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   padding-left: 12px;
-  padding-right: 3px;
-}
-
-.form__input-line {
   align-items: center;
   width: 100%;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: #2c2c2c;
   border: none;
-  &:focus {
-    border: none;
-  }
 }
 .form__button-field {
   width: 100%;
