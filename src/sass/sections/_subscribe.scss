@@ -105,6 +105,10 @@
 }
 
 .subscribe {
+    &__input-line {
+        transition: border-color 250ms $animation;
+    }
+
 
     &__input-line:hover,
     &__input-line:active,
@@ -130,7 +134,7 @@
 
     &__icon-danger {
         display: none;
-        font-size: 15px;
+        font-size: 10px;
         line-height: 1.5;
         position: absolute;
         width: 100%;
@@ -149,6 +153,8 @@
     outline: none;
     border: none;
     cursor: pointer;
+    transition: background-color 250ms $animation;
+    
 
     &:hover,
     &:focus,
