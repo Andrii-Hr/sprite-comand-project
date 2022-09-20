@@ -68,10 +68,10 @@
 &__cont-desktop{
   margin-bottom: 40px;
   @media screen and (min-width: $tablet) {
-    // margin-bottom: 100px;
+     margin-bottom: 100px;
   }
   @media screen and (min-width: $desktop) {
-  //  margin-bottom: 129px;
+     margin-bottom: 80px;
   }
 }
   &__nav-container {
