@@ -1,0 +1,156 @@
+.subscribe__section {
+    padding-top: 0;
+    margin-top: -43px;
+
+    @media screen and(min-width:$tablet) {
+        margin-top: -74px;
+    }
+
+    @media screen and(min-width:$desktop) {
+        margin-top: -66px;
+    }
+}
+
+.subscribe__container {
+    display: block;
+
+    @media screen and(min-width:$desktop) {
+        display: flex;
+        flex-flow: row-reverse;
+        align-items: center;
+    }
+}
+
+.subscribe__banan {
+    margin-bottom: 17px;
+    width: 280px;
+    height: 78px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    @media screen and(min-width:$tablet) {
+        width: 281px;
+        height: 136px;
+        margin-left: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    @media screen and(min-width:$desktop) {
+        width: 608px;
+        height: 266px;
+    }
+}
+
+.subscribe__title {
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.subscribe__subtitle {
+    margin-bottom: 40px;
+    line-height: 1.14;
+
+    @media screen and(min-width:$tablet) {
+        // max-width: 656px;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+}
+
+
+
+.subscribe__form {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    @media screen and(max-width:$tablet) {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    @media screen and(min-width:768px) {
+        flex-wrap: nowrap;
+        gap: 22px;
+    }
+
+    @media screen and(min-width:$desktop) {
+        flex-wrap: nowrap;
+        gap: 32px;
+
+    }
+}
+
+.subscribe__input-line {
+
+    width: 100%;
+    height: 42px;
+    border: 0.854167px solid $main-color;
+    padding-left: 12px;
+    outline: none;
+    color: #505050;
+    border-radius: 20px;
+
+    background: $back-color;
+
+    @media screen and(max-width:$tablet) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and(min-width:$tablet) {
+        max-width: 394px;
+    }
+}
+
+.subscribe {
+
+    &__input-line:hover,
+    &__input-line:active,
+    &__input-line:focus {
+        border-color: $second-color;
+    }
+
+    &__input-line:invalid {
+        border-color: #ff705d;
+    }
+
+    &__input-line:invalid+.subscribe__icon-danger {
+        display: flex;
+        align-items: center;
+        border-color: #ff705d;
+    }
+
+    &__svg-icon {
+        align-items: center;
+        justify-content: center;
+        margin-right: 3px;
+    }
+
+    &__icon-danger {
+        display: none;
+        font-size: 10px;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 50px;
+        left: 0px;
+        color: #ff705d;
+    }
+}
+
+.subscribe__btn {
+    width: 103px;
+    height: 42px;
+    background: $button-color;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: #B5FF00;
+    }
+}
