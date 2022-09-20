@@ -1,0 +1,58 @@
+<!--Модальне вікно-->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="button-close" data-modal-close type="button">
+      <svg class="icon-close" width="11" height="11">
+        <use href="./images/symbol-defs.svg#header-menu-cross"></use>
+      </svg>
+    </button>
+
+    <form class="form">
+      <h3 class="form__title">Order Form</h3>
+
+      <div class="form__field">
+        <div class="form__item">
+          <label class="form__lable" for="name">Name</label>
+          <div class="form__input">
+            <input
+              class="form__input-line"
+              type="text"
+              name="username"
+              id="name"
+              placeholder="Your name"
+              autofocus
+            />
+          </div>
+        </div>
+        <div class="form__item">
+          <label class="form__lable" for="phone-number">Phone number</label>
+          <div class="form__input">
+            <input
+              class="form__input-line"
+              type="tel"
+              name="phone_number"
+              id="phone-number"
+              placeholder="+38(0_ _)_ _ _  _ _  _ _"
+            />
+          </div>
+        </div>
+        <div class="form__item">
+          <label class="form__lable" for="email">E-mail</label>
+          <div class="form__input">
+            <input
+              class="form__input-line"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@gmail.com"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="form__button-field">
+        <button class="form__button" type="button">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
