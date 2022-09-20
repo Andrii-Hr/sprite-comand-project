@@ -1,16 +1,16 @@
 .header {
   width: 100%;
-  background: #fefefe;
+  background: $back-color;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
+​
 .header__container {
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
   display: flex;
+  padding: 10px 0;
   align-items: center;
 }
-
+​
 .logo {
   display: flex;
   width: 100%;
@@ -21,33 +21,38 @@
   justify-content: space-between;
   align-items: center;
 }
-
+​
 .burger-open {
+  padding: auto;
   height: 28px;
   border: none;
   align-items: center;
   background-color: $white-color;
-  padding: auto;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-
+​
 .burger__icon {
   fill: #7eb101;
 }
+​
 .nav__list {
   display: flex;
   margin-left: 191px;
-  @media screen and (min-width: 1280px) {
-    margin-left: 817px;
-  }
   align-items: center;
   gap: 28px;
+  @media screen and (min-width: 1280px) {
+    margin-left: 745px;
+  }
   @media screen and (max-width: 768px) {
     display: none;
   }
+  @media screen and (max-width: 1279.8px) {
+    margin-left: 220px;
+  }
 }
+​
 .nav__item {
   font-size: 14px;
   line-height: 1.14;
@@ -57,16 +62,17 @@
     color: $button-color;
   }
 }
+​
 .nav__link--current {
   color: $button-color;
 }
-
+​
 .button-order {
   position: absolute;
   width: 98px;
   height: 32px;
-  right: 32px;
   top: 20px;
+  right: 32px;
   @media screen and (min-width: 1280px) {
     right: 16px;
   }
@@ -82,21 +88,23 @@
     display: none;
   }
 }
+​
 .mobile-menu {
   position: absolute;
+  display: flex;
   opacity: 0;
+  width: 130px;
+  height: 255px;
+  right: 20px;
+  top: 50px;
+  z-index: 10;
   @media screen and (min-width: 768px) {
     display: none;
   }
   &.is-open {
     opacity: 1;
   }
-  width: 130px;
-  height: 255px;
-  display: flex;
-  right: 20px;
-  top: 50px;
-  z-index: 10;
+​
   background: $back-color;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   @media screen and (min-width: 768px) {
@@ -105,18 +113,20 @@
   border-radius: 30px 0px 30px 30px;
   overflow: hidden;
 }
+​
 .mobile-nav {
   flex-direction: column;
   width: 100%;
 }
+​
 .burger-open:active .mobile-nav {
   visibility: hidden;
 }
-
+​
 .mobile-nav__list {
   justify-content: space-between;
 }
-
+​
 .mobile-nav__item {
   padding: 16px;
   font-size: 16px;
@@ -127,7 +137,7 @@
     background-color: $button-color;
   }
 }
-
+​
 .mobile-nav__link :focus {
   background: $button-color;
 }
@@ -135,7 +145,6 @@
   position: absolute;
   padding: auto auto;
   right: 0;
-  top: 50px;
   width: 24px;
   height: 24px;
   top: 4px;
@@ -144,7 +153,7 @@
   background: none;
   cursor: pointer;
 }
-
+​
 .backdrop {
   position: fixed;
   width: 100%;
@@ -160,7 +169,7 @@
     pointer-events: none;
   }
 }
-
+​
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -168,17 +177,17 @@
     transform: translate(-50%, -50%) scale(0.8);
   }
 }
-
+​
 .modal {
   position: absolute;
   display: flex;
+  width: 100%;
+  height: 449px;
   left: 50%;
   top: 50%;
   padding: 32px;
   display: flex;
   transform: translate(-50%, -50%) scale(1);
-  width: 100%;
-  height: 449px;
   background: $main-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 30px;
@@ -190,6 +199,7 @@
 }
 .button-close {
   position: absolute;
+  display: flex;
   width: 24px;
   height: 24px;
   right: 16px;
@@ -198,18 +208,13 @@
   border: none;
   background-color: $white-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-
+​
 .form {
-  padding: 0;
-  margin: 0;
-
   width: 100%;
-
   &__title {
     margin-left: auto;
     margin-right: auto;
@@ -222,17 +227,14 @@
     color: #2c2c2c;
   }
 }
-.form__field {
-  width: 100%;
-}
-
+​
 .form__item {
   position: relative;
   &:not(:last-child) {
     margin-bottom: 24px;
   }
 }
-
+​
 .form__lable {
   margin-bottom: 2px;
   margin-left: 12px;
@@ -241,27 +243,26 @@
   line-height: 1.4;
   color: $dark-color;
 }
-
+​
 .form__input-line {
   position: relative;
   display: flex;
+  width: 100%;
   height: 48px;
   align-items: center;
-
   background: $white-color;
   border: 1px solid rgba(18, 18, 18, 0.12);
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   padding-left: 12px;
   align-items: center;
-  width: 100%;
   font-size: 16px;
   line-height: 1.25;
   color: $dark-color;
   border: none;
 }
+​
 .form__button-field {
-  width: 100%;
   text-align: center;
   margin-top: 32px;
 }
