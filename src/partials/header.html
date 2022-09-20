@@ -1,60 +1,21 @@
 <!--Хедер-->
-  <header class="header" id="header">
-    <div class="header__container container">
-      <div class="logo">
-        <svg class="logo__icon" width="66" height="52">
-          <use href="./images/symbol-defs.svg#logo"></use>
+<header class="header" id="header">
+  <div class="header__container container">
+    <div class="logo">
+      <svg class="logo__icon" width="66" height="52">
+        <use href="./images/symbol-defs.svg#logo"></use>
+      </svg>
+
+      <button data-open-menu class="burger-open js-open-menu">
+        <svg class="burger__icon" width="28" height="28">
+          <use href="./images/symbol-defs.svg#header-burger"></use>
         </svg>
-
-        <button data-open-menu class="burger-open js-open-menu">
-          <svg class="burger__icon" width="28" height="28">
-            <use href="./images/symbol-defs.svg#header-burger"></use>
-          </svg>
-        </button>
-      </div>
-
-      <!--Мобільне меню-->
-      <div data-menu class="mobile-menu js-menu-container" id="mobile-nav">
-        <button
-          data-close-menu
-          type="button"
-          class="burger-close js-close-menu"
-          aria-expanded="false"
-          aria-controls="mobile-nav"
-        >
-          <svg class="cross-icon" width="11" height="11">
-            <use href="./images/symbol-defs.svg#header-menu-cross"></use>
-          </svg>
-        </button>
-        <nav class="mobile-nav">
-          <ul class="mobile-nav__list">
-            <li class="mobile-nav__item">
-              <a
-                href="#hero"
-                class="mobile-nav__link mobile-nav__link--current"
-                >Home</a
-              >
-            </li>
-            <li class="mobile-nav__item">
-              <a href="#offering" class="mobile-nav__link">About</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a href="#customer" class="mobile-nav__link">Service</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a href="#favorites" class="mobile-nav__link">Menu</a>
-            </li>
-            <li class="mobile-nav__item">
-              <a href="#subscribe" class="mobile-nav__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      </button>
       <!--Десктопне меню-->
       <nav class="navigation">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#hero" class="nav__link nav__link--current">Home</a>
+            <a href="#hero" class="nav__link">Home</a>
           </li>
           <li class="nav__item">
             <a href="#offering" class="nav__link">About</a>
@@ -69,10 +30,44 @@
             <a href="#subscribe" class="nav__link">Contact</a>
           </li>
         </ul>
+        <button data-modal-open type="button" class="button-order">
+          Order Now
+        </button>
       </nav>
-      <button data-modal-open type="button" class="button-order">
-        Order Now
-      </button>
     </div>
-  </header>
 
+    <!--Мобільне меню-->
+    <div data-menu class="mobile-menu js-menu-container" id="mobile-nav">
+      <button
+        data-close-menu
+        type="button"
+        class="burger-close js-close-menu"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+      >
+        <svg class="cross-icon" width="11" height="11">
+          <use href="./images/symbol-defs.svg#header-menu-cross"></use>
+        </svg>
+      </button>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a href="#hero" class="mobile-nav__link">Home</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#offering" class="mobile-nav__link">About</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#customer" class="mobile-nav__link">Service</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#favorites" class="mobile-nav__link">Menu</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#subscribe" class="mobile-nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
