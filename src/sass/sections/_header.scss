@@ -36,17 +36,23 @@
 .burger__icon {
   fill: #7eb101;
 }
+
 .nav__list {
   display: flex;
   margin-left: 191px;
-  @media screen and (min-width: 1280px) {
-    margin-left: 817px;
-  }
   align-items: center;
   gap: 28px;
+  @media screen and (min-width: 1280px) {
+    margin-left: 745px;
+  }
   @media screen and (max-width: 768px) {
     display: none;
   }
+  @media screen and (max-width: 1279.8px) {
+    margin-left: 220px;
+  }
+}
+
 }
 .nav__item {
   font-size: 14px;
