@@ -21,7 +21,14 @@
               id="name"
               placeholder="Your name"
               autofocus
+              minlength="3"
             />
+            <div class="form__icon-danger">
+              <svg class="form__svg-icon" style="width: 12px; height: 12px">
+                <use href="/src/images/symbol-defs.svg#icon-danger"></use>
+              </svg>
+              <span> The name must be between 3 and 25 characters </span>
+            </div>
           </div>
         </div>
         <div class="form__item">
@@ -33,7 +40,17 @@
               name="phone_number"
               id="phone-number"
               placeholder="+38(0_ _)_ _ _  _ _  _ _"
+              minlength="10"
+              maxlength="13"
+              step="1"
+              value="0"
             />
+            <div class="form__icon-danger">
+              <svg class="form__svg-icon" style="width: 12px; height: 12px">
+                <use href="/src/images/symbol-defs.svg#icon-danger"></use>
+              </svg>
+              <span> This phone must be in the format 099 000 00 00 </span>
+            </div>
           </div>
         </div>
         <div class="form__item">

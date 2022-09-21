@@ -155,22 +155,17 @@
   font-size: 16px;
   line-height: 1.19;
   color: #000000;
-  transition: color 250ms $animation;
-}
-
-.mobile-nav__item:hover,
-.mobile-nav__item:focus {
-  background-color: $button-color;
 }
 
 .mobile-nav__link {
   display: block;
   padding: 16px;
-  transition: color 250ms $animation;
+  transition: background-color 250ms $animation;
 }
 
-.mobile-nav__link:focus {
-  background: $button-color;
+.mobile-nav__link:focus,
+.mobile-nav__link:hover {
+  background-color: $button-color;
 }
 
 .burger-close {
@@ -258,10 +253,6 @@
     line-height: 1.2;
     color: #2c2c2c;
   }
-}
-
-.form__field {
-  width: 100%;
 }
 
 .form__item {
