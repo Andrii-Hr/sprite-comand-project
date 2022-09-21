@@ -31,7 +31,7 @@
   border: none;
   align-items: center;
   background-color: $white-color;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -54,7 +54,7 @@
   display: flex;
   align-items: center;
   gap: 28px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $tablet) {
     display: none;
   }
 }
@@ -101,7 +101,7 @@
   color: $dark-color;
   border: none;
   cursor: pointer;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $tablet) {
     display: none;
   }
   transition: color 250ms $animation;
@@ -116,7 +116,7 @@
   position: absolute;
   opacity: 0;
   pointer-events: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
   &.is-open {
@@ -131,7 +131,7 @@
   z-index: 10;
   background: $back-color;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     box-shadow: none;
   }
   border-radius: 30px 0px 30px 30px;
@@ -219,7 +219,7 @@
   border-radius: 30px;
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile) {
     width: 458px;
   }
 }
