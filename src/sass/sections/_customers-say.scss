@@ -105,6 +105,7 @@
 
 .customer__box-people {
     display: flex;
+    align-items: center;
     border-right: 1px solid $second-color;
     width: 160px;
     height: 52px;
@@ -113,12 +114,14 @@
 
 .box-people__about {
     margin-left: 16px;
+
 }
 
 .box-people__name {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.5;
+    margin-bottom: 2px;
 }
 
 .box-people__decs {
