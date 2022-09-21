@@ -41,9 +41,11 @@
     border-radius: 50%;
     padding: 18px;
     background: $back-color;
+    transition: border-color 250ms $animation, transform 250ms $animation;
     &:hover,
     &:focus {
         border-color: $button-color;
+        transform: scale(1.2);
     }
     @media screen and (min-width: $tablet) {
         padding: 20px;
