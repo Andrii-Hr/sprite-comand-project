@@ -166,13 +166,13 @@
 .mobile-nav__link {
   display: block;
   padding: 16px;
-
   transition: color 250ms $animation;
 }
 
 .mobile-nav__link:focus {
   background: $button-color;
 }
+
 .burger-close {
   position: absolute;
   padding: auto auto;
@@ -228,6 +228,7 @@
     width: 458px;
   }
 }
+
 .button-close {
   position: absolute;
   width: 24px;
