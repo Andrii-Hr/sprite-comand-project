@@ -149,7 +149,7 @@
     margin-bottom: 8px;
     width: 48px;
     height: 48px;
-    background-color: #fefefe;
+    background-color: $back-color;
     border-radius: 50% 50%;
     background-image: url('../images/offering-icon-rocket.svg');
 
@@ -161,7 +161,7 @@
     margin-bottom: 8px;
     width: 48px;
     height: 48px;
-    background-color: #fefefe;
+    background-color: $back-color;
     border-radius: 50% 50%;
     background-image: url('../images/offering-icon-finger.svg');
 
@@ -181,7 +181,7 @@
     width: 106px;
     height: 40px;
     margin-right: 24px;
-    background: #FFFFFF;
+    background: $white-color;
     border: 2px solid $second-color;
     border-radius: 30px;
     font-weight: 500;
@@ -189,12 +189,12 @@
     line-height: 1.5;
     color: $dark-color;
     cursor: pointer;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-        background: #FFFFFF;
         border: 2px solid #597D00;
-        border-radius: 30px;
+
     }
 }
 
@@ -231,21 +231,173 @@
 }
 
 .offering__apple {
-    max-width: 280px;
     display: block;
+    min-width: 280px;
+    min-height: 310px;
     margin-left: auto;
     margin-right: auto;
 
     @media screen and(min-width: $tablet) {
+        display: flex;
         min-width: 704px;
         min-height: 394px;
     }
 
     @media screen and(min-width: $desktop) {
+        display: block;
         min-width: 550px;
         min-height: 604px;
         margin-bottom: 0;
         margin-right: 90px;
         margin-top: 180px;
+    }
+}
+
+.offering__box-apple {
+    position: absolute;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+
+    border-radius: 50% 50%;
+    width: 280px;
+    height: 280px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    @media screen and(min-width: $tablet) {
+        width: 357px;
+        height: 357px;
+        bottom: 0;
+        border: 3px solid rgba(255, 255, 255, 0.5);
+    }
+
+    @media screen and(min-width: $desktop) {
+        width: 550px;
+        height: 550px;
+        bottom: 0;
+        border: 5px solid rgba(255, 255, 255, 0.5);
+    }
+
+    &::before {
+        content: '';
+        width: 255.56px;
+        height: 255.56px;
+
+        @media screen and(min-width: $tablet) {
+            width: 325.84px;
+            height: 325.84px;
+        }
+
+        @media screen and(min-width: $desktop) {
+            width: 502px;
+            height: 502px;
+        }
+
+        background-color: $white-color;
+        border-radius: 50% 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    &::after {
+        content: '';
+        width: 128.29px;
+        height: 44.29px;
+        bottom: 34px;
+        background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+        filter: blur(6.61818px);
+
+        @media screen and(min-width: $tablet) {
+            width: 163.57px;
+            height: 56.47px;
+            bottom: 40px;
+            background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+            filter: blur(8.43818px);
+        }
+
+        @media screen and(min-width: $desktop) {
+            width: 252px;
+            height: 87px;
+            bottom: 62px;
+            background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+            filter: blur(13px);
+        }
+
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+.offering__obj-apple {
+    position: absolute;
+    width: 201.6px;
+    height: 255.56px;
+    top: 0;
+
+    @media screen and(min-width: $tablet) {
+        width: 257.04px;
+        height: 325.84px;
+        top: 0;
+    }
+
+    @media screen and(min-width: $desktop) {
+        width: 396px;
+        height: 502px;
+        top: 0;
+    }
+
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.offering__big-apple {
+    width: 280px;
+    height: 309px;
+    position: relative;
+
+    @media screen and(min-width: $tablet) {
+        width: 357px;
+        height: 394px;
+    }
+
+    @media screen and(min-width: $desktop) {
+        width: 550px;
+        height: 604px;
+    }
+}
+
+.offering__medium-apple {
+    display: block;
+    width: 161px;
+    height: 211px;
+    margin-top: 116px;
+    margin-left: 29px;
+
+    @media screen and(max-width: $tablet) {
+        display: none;
+    }
+
+    @media screen and(min-width: $desktop) {
+        display: none;
+    }
+}
+
+.offering__small-apple {
+    display: block;
+    width: 108px;
+    height: 136px;
+    margin-top: 180px;
+    margin-left: 44px;
+
+    @media screen and(max-width: $tablet) {
+        display: none;
+    }
+
+    @media screen and(min-width: $desktop) {
+        display: none;
     }
 }
